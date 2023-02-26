@@ -1,0 +1,48 @@
+\documentclass[a4paper,12pt]{report}
+
+\usepackage[explicit]{titlesec}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{sectsty}
+\usepackage{helvet}
+\usepackage{charter}
+\usepackage[none]{hyphenat}
+
+\definecolor{section-color}{RGB}{73, 83, 115}
+
+\titleformat{\chapter}
+{\color{section-color}\sffamily\Large\bfseries}{\thechapter \quad \MakeUppercase{#1}}{.5em}{\vspace{.5ex}}[\titlerule]
+\titlespacing*{\chapter}
+{0pt}{0pt}{15pt}
+
+\begin{document}
+	\chapter{Project Goals}
+	\begin{itemize}
+		\item{
+			\bfseries{Console Access over UART}
+		}
+		
+		\item{
+			\textbf{Break out all IO to headers}
+		}
+	
+		\item{
+			\textbf{Base board should both be as minimal as possible while also providing easy debug access and `proof of life`}
+		}
+		
+		\item{
+			\textbf{Compact}
+		}
+	
+		\item{
+			\textbf{Easy Mounting}
+		}
+		
+		\item{
+			\textbf{Power over USB-C} (And maybe data too?)
+		}
+	\end{itemize}
+
+	\chapter{Hardware design}
+	\section{Onboard WiFi/Networking}
+	
+\end{document}
